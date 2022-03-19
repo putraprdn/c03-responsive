@@ -1,0 +1,66 @@
+@media screen and (max-width: 480px) {
+	.service {
+		margin-top: 65px;
+	}
+	.service__image-wrap {
+		margin-right: 0;
+	}
+	.service__image {
+		max-width: 252px;
+	}
+	s .why-us {
+		margin-top: 70px;
+	}
+	.why-us__card-group {
+		margin-top: 20px;
+	}
+	.why-us__card {
+		width: 100%;
+	}
+	.testimonial .item {
+		width: 90vw;
+		flex-direction: column;
+		margin: 14px;
+		margin-top: 20px;
+		padding: 45px 25px;
+		height: fit-content;
+	}
+	.testimonial .item .right-wrap {
+		width: fit-content;
+	}
+	.testimonial .icon-wrap {
+		justify-content: center;
+		margin: 20px 0;
+	}
+
+	.cta__title {
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.cta__description {
+		margin-bottom: 40px;
+	}
+	.cta-inner {
+		margin-top: 55px;
+	}
+
+	.faq {
+		margin-top: 60px;
+	}
+	.faq .paragraph {
+		margin-bottom: 24px;
+	}
+	.faq .card button {
+		text-align: left;
+	}
+
+	.footer {
+		margin-top: 60px;
+	}
+	.footer .row .paragraph {
+		margin-bottom: 16px;
+	}
+	.footer .row div:nth-child(2) .paragraph {
+		margin-bottom: 16px;
+	}
+}

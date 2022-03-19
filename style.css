@@ -97,7 +97,8 @@ header {
 	font-weight: 300;
 }
 .main-description {
-	width: 468px;
+	max-width: 468px;
+	width: 100%;
 }
 .main__button {
 	width: fit-content;
@@ -110,7 +111,7 @@ header {
 }
 .main__image {
 	width: 704px;
-	height: 407px;
+	max-height: 407px;
 }
 
 .service {
@@ -180,9 +181,12 @@ header {
 /* .testimonial .owl-carousel {
 	position: relative;
 } */
+.testimonial .container-sm {
+	max-width: 100%;
+}
 .testimonial .item {
 	padding: 69px 32px;
-	margin-top: 40px;
+	margin-top: 40px !important;
 	column-gap: 26px;
 	width: 555px;
 	/* height: 270px; */
@@ -277,15 +281,15 @@ header {
 
 .footer {
 	margin-top: 150px;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
-.footer .col p:not(:last-child),
-.footer .col a:not(:last-child) {
+.footer div p:not(:last-child),
+.footer div a:not(:last-child) {
 	margin-bottom: 16px;
 }
-.footer .col a {
+.footer div a {
 	font-weight: 400;
 }
 .footer__icon-wrap {
-	column-gap: 16px;
+	gap: 16px;
 }
