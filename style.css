@@ -55,6 +55,9 @@ a {
 	padding-right: 0;
 	padding-left: 0;
 } */
+#close {
+	cursor: pointer;
+}
 
 header {
 	background-color: var(--light-blue);
@@ -292,4 +295,11 @@ header {
 }
 .footer__icon-wrap {
 	gap: 16px;
+}
+
+/* SideNav */
+#hamburger,
+#sideNav,
+.bg--active {
+	display: none;
 }

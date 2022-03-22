@@ -63,4 +63,62 @@
 	.footer .row div:nth-child(2) .paragraph {
 		margin-bottom: 16px;
 	}
+
+	/* sideNav */
+	#hamburger {
+		display: block;
+		cursor: pointer;
+		z-index: 999;
+	}
+
+	/* #sideNav {
+		display: block;
+	} */
+
+	#sideNav {
+		display: block;
+		top: -8px;
+		right: 0;
+		transform: translateX(200%);
+		min-width: 50vw;
+		min-height: calc(100vh + 8px);
+		padding: 27px 16px;
+		position: fixed;
+		background-color: #fff;
+		transition: transform 0.25s ease-in-out;
+		z-index: 1000;
+	}
+	.active {
+		transform: translateX(0%) !important;
+	}
+
+	#bgDrop {
+		/* content: ""; */
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.6);
+		right: 0;
+		top: 0;
+		opacity: 0;
+		z-index: 10;
+		display: block;
+		transition: all 0.25s ease-in-out;
+	}
+	.active {
+		opacity: 1 !important;
+	}
+	#sideNav h2 {
+		font-size: 14px;
+		line-height: 20px;
+		/* margin-bottom: 16px; */
+	}
+	#sideNav ul {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	#sideNav .nav-link {
+		padding: 0;
+	}
 }
