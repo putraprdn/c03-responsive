@@ -71,29 +71,38 @@
 		z-index: 999;
 	}
 
-	/* #sideNav {
-		display: block;
-	} */
-
 	#sideNav {
 		display: block;
 		top: -8px;
 		right: 0;
-		transform: translateX(200%);
 		min-width: 50vw;
 		min-height: calc(100vh + 8px);
 		padding: 27px 16px;
 		position: fixed;
 		background-color: #fff;
-		transition: transform 0.25s ease-in-out;
 		z-index: 1000;
+
+		transform: translateX(200%);
+		-webkit-transform: translateX(200%);
+		-moz-transform: translateX(200%);
+		-ms-transform: translateX(200%);
+		-o-transform: translateX(200%);
+
+		transition: transform 0.25s ease-in-out;
+		-webkit-transition: transform 0.25s ease-in-out;
+		-moz-transition: transform 0.25s ease-in-out;
+		-ms-transition: transform 0.25s ease-in-out;
+		-o-transition: transform 0.25s ease-in-out;
 	}
 	.active {
 		transform: translateX(0%) !important;
+		-webkit-transform: translateX(0%) !important;
+		-moz-transform: translateX(0%) !important;
+		-ms-transform: translateX(0%) !important;
+		-o-transform: translateX(0%) !important;
 	}
 
-	#bgDrop {
-		/* content: ""; */
+	.bgDrop {
 		position: fixed;
 		width: 100vw;
 		height: 100vh;
@@ -102,16 +111,32 @@
 		top: 0;
 		opacity: 0;
 		z-index: 10;
-		display: block;
-		transition: all 0.25s ease-in-out;
+
+		transform: translateX(200%);
+		-webkit-transform: translateX(200%);
+		-moz-transform: translateX(200%);
+		-ms-transform: translateX(200%);
+		-o-transform: translateX(200%);
+
+		transition: opacity 0.25s ease-in-out;
+		-webkit-transition: opacity 0.25s ease-in-out;
+		-moz-transition: opacity 0.25s ease-in-out;
+		-ms-transition: opacity 0.25s ease-in-out;
+		-o-transition: opacity 0.25s ease-in-out;
 	}
 	.active {
+		display: block;
 		opacity: 1 !important;
+
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
 	}
 	#sideNav h2 {
 		font-size: 14px;
 		line-height: 20px;
-		/* margin-bottom: 16px; */
 	}
 	#sideNav ul {
 		display: flex;

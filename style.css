@@ -51,10 +51,6 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-/* .container {
-	padding-right: 0;
-	padding-left: 0;
-} */
 #close {
 	cursor: pointer;
 }
@@ -123,21 +119,10 @@ header {
 .service__image-wrap {
 	margin-right: 86px;
 }
-/* .service__text-wrap {
-	flex-basis: 50%;
-	max-width: 458px;
-} */
 .title {
 	font-size: 24px;
 	line-height: 36px;
-	/* font-weight: 700; */
 }
-/* .service__title {
-	margin-bottom: 24px;
-} */
-/* .service__description {
-	margin-bottom: 16px;
-} */
 .service__list {
 	row-gap: 20px;
 }
@@ -146,20 +131,13 @@ header {
 }
 
 .why-us {
-	/* row-gap: 40px; */
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
 .why-us__card-group {
 	margin-top: 40px;
-	/* margin-left: 0;
-	margin-right: 0; */
 	gap: 16px;
 }
-/* .why-us__card-group > div {
-	padding-left: 0;
-	padding-right: 0;
-} */
 .why-us__card-inner {
 	row-gap: 16px;
 }
@@ -175,15 +153,9 @@ header {
 	line-height: 24px;
 }
 
-/* .testimonial {
-	overflow-x: hidden;
-} */
 .testimonial__text-wrap {
 	margin-bottom: 40px;
 }
-/* .testimonial .owl-carousel {
-	position: relative;
-} */
 .testimonial .container-sm {
 	max-width: 100%;
 }
@@ -192,11 +164,14 @@ header {
 	margin-top: 40px !important;
 	column-gap: 26px;
 	width: 555px;
-	/* height: 270px; */
-	/* width: 619px; */
 	height: 235px;
-	border-radius: 8px;
 	background-color: var(--light-blue);
+
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
 }
 .testimonial .icon-wrap .icon {
 	width: 16px;
@@ -209,14 +184,23 @@ header {
 .testimonial .owl-next > span,
 .testimonial .owl-prev > span {
 	border: 1px solid #c4c4c4;
-	border-radius: 50%;
 	width: 32px;
 	display: inline-block;
 	height: 32px;
 	font-size: 18px;
+
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 .testimonial .owl-next > span:hover,
-.testimonial .owl-prev > span:hover {
+.testimonial .owl-prev > span:hover,
+.testimonial .owl-next > span:active,
+.testimonial .owl-prev > span:active,
+.testimonial .owl-next > span:focus,
+.testimonial .owl-prev > span:focus {
 	background-color: var(--primary);
 	color: #fff;
 }
@@ -227,7 +211,6 @@ header {
 	display: none;
 }
 .testimonial .image-wrap img {
-	/* position: absolute; */
 	width: 80px !important;
 	height: 80px !important;
 }
@@ -241,8 +224,13 @@ header {
 	padding: 64px;
 	background-color: var(--dark-blue);
 	margin-top: 100px;
-	border-radius: 13px;
 	color: #fff;
+
+	border-radius: 13px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	-ms-border-radius: 13px;
+	-o-border-radius: 13px;
 }
 .cta__title {
 	font-size: 36px;
@@ -300,6 +288,6 @@ header {
 /* SideNav */
 #hamburger,
 #sideNav,
-.bg--active {
+.bgDrop {
 	display: none;
 }
